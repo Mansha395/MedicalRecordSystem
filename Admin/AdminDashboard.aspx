@@ -22,7 +22,7 @@
 
         /* SIDEBAR */
         .sidebar {
-            width: 200px;
+            width: 220px;
             height: 100vh;
             position: fixed;
             background: #40916c;
@@ -42,12 +42,12 @@
 
         /* MAIN CONTENT */
         .main {
-            margin-left: 210px;
+            margin-left: 230px;
             padding: 20px;
         }
 
         .card {
-            width: 200px;
+            width: 220px;
             display: inline-block;
             margin: 15px;
             padding: 20px;
@@ -84,6 +84,7 @@
 <body>
 <form id="form1" runat="server">
 
+    <!-- NAVBAR -->
     <div class="navbar">
         Admin Dashboard
     </div>
@@ -91,13 +92,15 @@
     <!-- SIDEBAR -->
     <div class="sidebar">
         <a href="AdminDashboard.aspx">Dashboard</a>
-        <a href="ManagePatients.aspx">Patients</a>
-        <a href="ManageDoctors.aspx">Doctors</a>
-        <a href="ManageAppointments.aspx">Appointments</a>
+        <a href="ManagePatients.aspx">Manage Patients</a>
+        <a href="ManageDoctors.aspx">Manage Doctors</a>
+        <a href="ManageAppointments.aspx">Manage Appointments</a>
+        <a href="AddPatient.aspx">Add Patient</a>
+        <a href="AddDoctor.aspx">Add Doctor</a>
         <a href="#">Logout</a>
     </div>
 
-    <!-- MAIN -->
+    <!-- MAIN CONTENT -->
     <div class="main">
 
         <!-- CARDS -->
@@ -123,9 +126,10 @@
 
         <!-- ACTION BUTTONS -->
         <div class="actions">
+            <a href="AddPatient.aspx" class="btn">+ Add Patient</a>
             <a href="AddDoctor.aspx" class="btn">+ Add Doctor</a>
-            <a href="ViewPatients.aspx" class="btn">View Patients</a>
             <a href="ManageAppointments.aspx" class="btn">Manage Appointments</a>
+            <a href="ManagePatients.aspx" class="btn">Manage Patients</a>
         </div>
 
     </div>
